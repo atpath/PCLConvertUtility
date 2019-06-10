@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Diagnostics;
 using PCLConvert.Patterns;
 
@@ -20,7 +20,7 @@ namespace PCLConvert.Util
                 startInfo.UseShellExecute = true;
                 startInfo.FileName = ConfigManager.Instance.GhostPCLPath;
                 startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                startInfo.Arguments = $"-o {destPath} -sDEVICE=pdfwrite -f {sourcePath}";
+                startInfo.Arguments = $"-o \"{destPath}\" -sDEVICE=pdfwrite -f \"{sourcePath}\"";
 
                 using (var process = Process.Start(startInfo))
                 {
