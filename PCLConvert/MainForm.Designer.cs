@@ -111,7 +111,7 @@
             // 
             // openFileDialogSelectSource
             // 
-            this.openFileDialogSelectSource.Filter = "SPL files|*.SPL|PCL files|*.PCL|All files|*.*";
+            this.openFileDialogSelectSource.Filter = "PCL files|*.PCL|SPL files|*.SPL|All files|*.*";
             this.openFileDialogSelectSource.Title = "Select source pcl file";
             // 
             // openFileDialogSelectDest
