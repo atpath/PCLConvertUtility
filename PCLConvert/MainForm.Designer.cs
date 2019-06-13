@@ -52,9 +52,9 @@
             this.labelPclFilePath.AutoSize = true;
             this.labelPclFilePath.Location = new System.Drawing.Point(9, 43);
             this.labelPclFilePath.Name = "labelPclFilePath";
-            this.labelPclFilePath.Size = new System.Drawing.Size(99, 15);
+            this.labelPclFilePath.Size = new System.Drawing.Size(72, 15);
             this.labelPclFilePath.TabIndex = 0;
-            this.labelPclFilePath.Text = "PCL Source File:";
+            this.labelPclFilePath.Text = "Source File:";
             // 
             // textBoxPclSourcePath
             // 
@@ -111,7 +111,7 @@
             // 
             // openFileDialogSelectSource
             // 
-            this.openFileDialogSelectSource.Filter = "PCL files|*.PCL|SPL files|*.SPL|All files|*.*";
+            this.openFileDialogSelectSource.Filter = "PCL files|*.PCL|XPS files|*.XPS|SPL files|*.SPL|All files|*.*";
             this.openFileDialogSelectSource.Title = "Select source pcl file";
             // 
             // openFileDialogSelectDest

@@ -1,4 +1,4 @@
-﻿using PCLConvert.Util;
+using PCLConvert.Util;
 using System;
 using System.ComponentModel;
 using System.Diagnostics;
@@ -102,7 +102,7 @@ namespace PCLConvert
                 }
             }
 
-            if (PCLConvertManager.Instance.ConvertPCLToPDF(sourceFilePath, destFilePath, out string errorMessage))
+            if (PCLConvertManager.Instance.ConvertToPDF(sourceFilePath, destFilePath, out string errorMessage))
             {
                 if (ConfigManager.Instance.IsOpenAfterConvert)
                 {

@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="$this.Text" xml:space="preserve">
-    <value>PCL Convert Utility</value>
+    <value>Convert Utility (Version 0.2.4)</value>
   </data>
   <data name="buttonConvert.Text" xml:space="preserve">
     <value>Convert to PDF</value>
@@ -127,7 +127,7 @@
     <value>English</value>
   </data>
   <data name="labelPclFilePath.Text" xml:space="preserve">
-    <value>PCL Source File:</value>
+    <value>Source File:</value>
   </data>
   <data name="labelPdfDestPath.Text" xml:space="preserve">
     <value>PDF Destination File:</value>
@@ -139,7 +139,7 @@
     <value>Convert file done</value>
   </data>
   <data name="MsgNeedToSelectPCLFile" xml:space="preserve">
-    <value>Please select a PCL file first</value>
+    <value>Please select a file first</value>
   </data>
   <data name="MsgNeedToSelectPDFFile" xml:space="preserve">
     <value>Please select a PDF file output</value>
@@ -148,7 +148,7 @@
     <value>Overwrite existed PDF file?</value>
   </data>
   <data name="MsgPCLFileNotExist" xml:space="preserve">
-    <value>PCL file not exists</value>
+    <value>File not exists</value>
   </data>
   <data name="openPDFAfterConvertToolStripMenuItem.Text" xml:space="preserve">
     <value>Open PDF file after convert finished</value>

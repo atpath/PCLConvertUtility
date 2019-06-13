@@ -1,5 +1,7 @@
 using System;
 using System.Diagnostics;
+using System.IO;
+using System.Linq;
 using PCLConvert.Patterns;
 
 namespace PCLConvert.Util
@@ -10,17 +12,31 @@ namespace PCLConvert.Util
         {
         }
 
-        public bool ConvertPCLToPDF(string sourcePath, string destPath, out string errorMessage)
+        private bool IsXPSFile(string filePath)
+        {
+            var firstLine = File.ReadLines(filePath).First();
+            return firstLine.Contains("[Content_Types].xml");
+        }
+
+        public bool ConvertToPDF(string sourcePath, string destPath, out string errorMessage)
         {
             errorMessage = "";
             try
             {
-                var startInfo = new ProcessStartInfo();
-                startInfo.CreateNoWindow = false;
-                startInfo.UseShellExecute = true;
-                startInfo.FileName = ConfigManager.Instance.GhostPCLPath;
-                startInfo.WindowStyle = ProcessWindowStyle.Hidden;
-                startInfo.Arguments = $"-o \"{destPath}\" -sDEVICE=pdfwrite -f \"{sourcePath}\"";
+                var ghostFileName = ConfigManager.Instance.GhostPCLPath;
+                if (IsXPSFile(sourcePath))
+                {
+                    ghostFileName = ConfigManager.Instance.GhostXPSPath;
+                }
+
+                var startInfo = new ProcessStartInfo
+                {
+                    CreateNoWindow = false,
+                    UseShellExecute = true,
+                    FileName = ghostFileName,
+                    WindowStyle = ProcessWindowStyle.Hidden,
+                    Arguments = $"-o \"{destPath}\" -sDEVICE=pdfwrite -f \"{sourcePath}\""
+                };
 
                 using (var process = Process.Start(startInfo))
                 {
@@ -34,6 +50,7 @@ namespace PCLConvert.Util
                 errorMessage = ex.Message;
                 return false;
             }
+
         }
     }
 }

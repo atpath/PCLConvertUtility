@@ -18,10 +18,12 @@ namespace PCLConvert.Util
             if (Environment.Is64BitOperatingSystem)
             {
                 GhostPCLPath = $"{rootPath}\\ghostpcl-win64\\gpcl6win64.exe";
+                GhostXPSPath = $"{rootPath}\\ghostxps-win64\\gxpswin64.exe";
             }
             else
             {
                 GhostPCLPath = $"{rootPath}\\ghostpcl-win32\\gpcl6win32.exe";
+                GhostXPSPath = $"{rootPath}\\ghostxps-win32\\gxpswin32.exe";
             }
             ReloadSettings();
         }
@@ -52,6 +54,8 @@ namespace PCLConvert.Util
         }
 
         public string GhostPCLPath { get; private set; }
+
+        public string GhostXPSPath { get; private set; }
 
         public bool IsOpenAfterConvert { get; private set; }
 

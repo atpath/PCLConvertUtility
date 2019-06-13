@@ -118,7 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="$this.Text" xml:space="preserve">
-    <value>PCL 檔轉換</value>
+    <value>檔轉換 (Version 0.2.4)</value>
   </data>
   <data name="buttonConvert.Text" xml:space="preserve">
     <value>轉換成PDF檔</value>
@@ -127,7 +127,7 @@
     <value>英語</value>
   </data>
   <data name="labelPclFilePath.Text" xml:space="preserve">
-    <value>PCL 原始檔案:</value>
+    <value>原始檔案:</value>
   </data>
   <data name="labelPdfDestPath.Text" xml:space="preserve">
     <value>PDF 目的檔案:</value>
@@ -139,7 +139,7 @@
     <value>轉換檔成功</value>
   </data>
   <data name="MsgNeedToSelectPCLFile" xml:space="preserve">
-    <value>請先選擇一個PCL檔</value>
+    <value>請先選擇一個檔</value>
   </data>
   <data name="MsgNeedToSelectPDFFile" xml:space="preserve">
     <value>請選擇輸出的PDF檔</value>
@@ -148,7 +148,7 @@
     <value>覆蓋已存在的PDF文件？</value>
   </data>
   <data name="MsgPCLFileNotExist" xml:space="preserve">
-    <value>PCL 文件不存在</value>
+    <value>文件不存在</value>
   </data>
   <data name="openPDFAfterConvertToolStripMenuItem.Text" xml:space="preserve">
     <value>轉換完成後打開PDF檔</value>
