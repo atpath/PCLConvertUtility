@@ -15,7 +15,7 @@ namespace PCLConvert.Util
         private bool IsXPSFile(string filePath)
         {
             var firstLine = File.ReadLines(filePath).First();
-            return firstLine.Contains("[Content_Types].xml");
+            return firstLine.StartsWith("PK");
         }
 
         public bool ConvertToPDF(string sourcePath, string destPath, out string errorMessage)
